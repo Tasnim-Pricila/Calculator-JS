@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#calculator{
+    height: 100vh;
+    max-width: 100%;
+    background-color: rgb(140, 205, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* width: 300px;    */
+    /* border: 5px solid red; */
+    overflow: hidden;
+    border: 2px solid rgb(15, 15, 15);
+    box-shadow: 10px 10px 39px #888;
+    padding: 10px;
+}
+.input-area{
+    overflow: hidden;
+}
+.input-place{
+    width: 100%;
+    /* display: block; */
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+    height: 100px;
+    background-color: paleturquoise;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.numbers{
+    /* width: 300px; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2px;
+}
+button{
+    font-weight: bold;
+    padding: 10px 4px;
+    font-size: 25px;
+    border-radius: 3px ;
+    box-shadow: 0px 0px 5px rgba(242, 243, 247, 0.726);
+    cursor: pointer;
+    border-color: rgb(76, 174, 219);
+}
+.span-two{
+    grid-column: span 2;
+}
+.span-two:nth-child(even){
+    background-color: paleturquoise;
+    
+}
