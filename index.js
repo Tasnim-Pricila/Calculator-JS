@@ -40,8 +40,10 @@ document.getElementById('add-btn').addEventListener('click', function(){
 document.getElementById('minus-btn').addEventListener('click', function(){
     getNumbers('minus-btn');
 })
-document.getElementById('multiply-btn').addEventListener('click', function(){
+const multiplyButton = document.getElementById('multiply-btn')
+multiplyButton.addEventListener('click', function(){
     getNumbers('multiply-btn');
+   
 })
 document.getElementById('divide-btn').addEventListener('click', function(){
     getNumbers('divide-btn');
